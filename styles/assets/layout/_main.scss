@@ -1,21 +1,63 @@
 .bodyContainer {
-  width: 90%;
-  margin: 0 auto;
-  max-width: 1200px;
-  background-color: blue;
+  display: flex;
+  width: 100%;
+  height: 900px;
+  background-color: black;
+  align-items: center;
+  justify-content: center;
+  .aboutMe__thumbnail {
+    display: flex;
+    height: 310px;
+    width: 310px;
+    border: 2px solid white;
+    border-radius: 160px;
+    .aboutMe__img {
+      width: 100%;
+      background-image: url("./assets/layout/luffy.jpg");
+      background-size: cover;
+      border-radius: 160px;
+    }
+  }
   .aboutMe {
     background-color: #50505033;
-    padding: 3.5rem;
+    color: white;
+    width: 800px;
+    height: 325px;
+    padding: 3rem;
+    border: 2px solid white;
     border-radius: 2rem;
-    margin-top: 4rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     display: flex;
     flex-direction: column;
     font-size: 40px;
     font-family: sans-serif;
-    &__img {
-      display: flex;
-      background-image: url("./luffy.jpg");
-      position: relative;
+
+    &__title {
+      text-decoration: none;
+      font-size: 36px;
+      margin-bottom: 1.5rem;
+    }
+    &__info {
+      font-size: 24px;
+      margin-bottom: 15px;
     }
   }
+}
+
+.boton {
+  border: none;
+  min-width: 180px;
+  width: 150px;
+  height: 50px;
+  font-size: 25px;
+  padding: 8px 24px;
+  margin: 20px 0px 0px 0px;
+  color: #fff;
+  display: inline-flex;
+  border-radius: 75px;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  background: purple;
 }

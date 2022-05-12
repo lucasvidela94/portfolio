@@ -200,17 +200,47 @@ table {
 }
 
 .bodyContainer {
-  width: 90%;
-  margin: 0 auto;
-  max-width: 1200px;
-  background-color: blue;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 900px;
+  background-color: black;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.bodyContainer .aboutMe__thumbnail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 310px;
+  width: 310px;
+  border: 2px solid white;
+  border-radius: 160px;
+}
+
+.bodyContainer .aboutMe__thumbnail .aboutMe__img {
+  width: 100%;
+  background-image: url("./assets/layout/luffy.jpg");
+  background-size: cover;
+  border-radius: 160px;
 }
 
 .bodyContainer .aboutMe {
   background-color: #50505033;
-  padding: 3.5rem;
+  color: white;
+  width: 800px;
+  height: 325px;
+  padding: 3rem;
+  border: 2px solid white;
   border-radius: 2rem;
-  margin-top: 4rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -222,11 +252,37 @@ table {
   font-family: sans-serif;
 }
 
-.bodyContainer .aboutMe__img {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background-image: url("./luffy.jpg");
-  position: relative;
+.bodyContainer .aboutMe__title {
+  text-decoration: none;
+  font-size: 36px;
+  margin-bottom: 1.5rem;
+}
+
+.bodyContainer .aboutMe__info {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.boton {
+  border: none;
+  min-width: 180px;
+  width: 150px;
+  height: 50px;
+  font-size: 25px;
+  padding: 8px 24px;
+  margin: 20px 0px 0px 0px;
+  color: #fff;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  border-radius: 75px;
+  text-decoration: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: purple;
 }
 /*# sourceMappingURL=main.css.map */
