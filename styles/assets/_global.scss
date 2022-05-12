@@ -1,7 +1,9 @@
 // Import base
+@import "./base/html";
 @import "./base/reset";
 @import "./base/variables";
 @import "./base/typography";
 
 //import layout
-@import "./layout/header"
+@import "./layout/header";
+@import "./layout/main";
