@@ -1,5 +1,12 @@
 html {
   scroll-behavior: smooth;
+  width: 100%;
+  background-size: 250px;
+  background-image: url("./assets/img/pattern3.jpg");
+  background-repeat: repeat;
+  position: relative;
+  -webkit-transition: all 1.4s cubic-bezier(0.52, -0.52, 0, 1.05);
+  transition: all 1.4s cubic-bezier(0.52, -0.52, 0, 1.05);
 }
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -171,6 +178,8 @@ table {
 }
 
 .main {
+  background-color: transparent;
+  color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -204,8 +213,9 @@ table {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  height: 900px;
-  background-color: black;
+  height: 600px;
+  background-color: #111c20;
+  border: 1px solid white;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -220,24 +230,24 @@ table {
   display: flex;
   height: 310px;
   width: 310px;
-  border: 2px solid white;
   border-radius: 160px;
+  margin: 0px 0px 0px 10px;
 }
 
 .bodyContainer .aboutMe__thumbnail .aboutMe__img {
   width: 100%;
-  background-image: url("./assets/layout/luffy.jpg");
-  background-size: cover;
+  background-image: url("./assets/img/profile_picture.jpg ");
   border-radius: 160px;
+  background-size: cover;
 }
 
 .bodyContainer .aboutMe {
-  background-color: #50505033;
+  background-color: transparent;
   color: white;
   width: 800px;
-  height: 325px;
+  height: 425px;
   padding: 3rem;
-  border: 2px solid white;
+  margin-right: 60px;
   border-radius: 2rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -256,20 +266,27 @@ table {
   text-decoration: none;
   font-size: 36px;
   margin-bottom: 1.5rem;
+  color: white;
 }
 
 .bodyContainer .aboutMe__info {
   font-size: 24px;
   margin-bottom: 15px;
+  line-height: 35px;
+}
+
+.bodyContainer .aboutMe__info .path {
+  color: red;
+  margin-right: 10px;
 }
 
 .boton {
   border: none;
   min-width: 180px;
-  width: 150px;
-  height: 50px;
-  font-size: 25px;
-  padding: 8px 24px;
+  width: 40px;
+  height: 35px;
+  font-size: 20px;
+  padding: 6px 8px;
   margin: 20px 0px 0px 0px;
   color: #fff;
   display: -webkit-inline-box;
@@ -283,6 +300,6 @@ table {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: purple;
+  background: red;
 }
 /*# sourceMappingURL=main.css.map */
