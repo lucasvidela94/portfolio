@@ -1,3 +1,9 @@
 html {
   scroll-behavior: smooth;
+  width: 100%;
+  background-size: 250px;
+  background-image: url("./assets/img/pattern3.jpg");
+  background-repeat: repeat;
+  position: relative;
+  transition: all 1.4s cubic-bezier(0.52, -0.52, 0, 1.05);
 }
