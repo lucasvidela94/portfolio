@@ -1,9 +1,14 @@
 html {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
   scroll-behavior: smooth;
+  font-family: sans-serif;
   width: 100%;
   background-size: 250px;
-  background-image: url("./assets/img/pattern3.jpg");
-  background-repeat: repeat;
+  background-color: #333;
   position: relative;
   -webkit-transition: all 1.4s cubic-bezier(0.52, -0.52, 0, 1.05);
   transition: all 1.4s cubic-bezier(0.52, -0.52, 0, 1.05);
@@ -147,7 +152,7 @@ table {
 .navbar {
   width: 100%;
   padding: 20px;
-  background-color: aquamarine;
+  background-color: dodgerblue;
   -webkit-box-shadow: 0px 0px 5px 3px #494949;
           box-shadow: 0px 0px 5px 3px #494949;
 }
@@ -177,8 +182,11 @@ table {
   font-weight: bold;
 }
 
+.navbar__links li a {
+  text-decoration: none;
+}
+
 .main {
-  background-color: transparent;
   color: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -186,6 +194,9 @@ table {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -214,8 +225,6 @@ table {
   display: flex;
   width: 100%;
   height: 600px;
-  background-color: #111c20;
-  border: 1px solid white;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -242,9 +251,8 @@ table {
 }
 
 .bodyContainer .aboutMe {
-  background-color: transparent;
   color: white;
-  width: 800px;
+  width: 100%;
   height: 425px;
   padding: 3rem;
   margin-right: 60px;
@@ -273,10 +281,11 @@ table {
   font-size: 24px;
   margin-bottom: 15px;
   line-height: 35px;
+  text-align: start;
 }
 
 .bodyContainer .aboutMe__info .path {
-  color: red;
+  color: dodgerblue;
   margin-right: 10px;
 }
 
@@ -300,11 +309,26 @@ table {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: red;
+  background: dodgerblue;
+}
+
+.main__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main__content .title {
+  color: whitesmoke;
+  font-size: 3rem;
+  margin: 0 20px;
 }
 
 .container__content {
-  border: 3px solid greenyellow;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -325,8 +349,9 @@ table {
 }
 
 .container__content .card {
-  border: 3px solid palevioletred;
+  border: 3px solid whitesmoke;
   border-radius: 6px;
+  margin: 10px 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -340,8 +365,8 @@ table {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 392px;
-  height: 418px;
+  width: 350px;
+  height: 380px;
 }
 
 .container__content .card__img {
@@ -378,16 +403,68 @@ table {
 }
 
 .container__content .card__textos--titulo__nombreProyecto {
-  color: orange;
+  color: whitesmoke;
   font-size: 1.3rem;
 }
 
 .container__content .card__textos--titulo__textoProyecto {
-  color: green;
+  color: whitesmoke;
   font-size: 1.2rem;
 }
 
 .container__content .card__textos--titulo__link {
   color: pink;
+}
+
+.footer {
+  width: 100%;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__credits {
+  margin: 0 20px;
+  color: dodgerblue;
+  font-size: 1.4rem;
+}
+
+.footer__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 25%;
+  height: 40px;
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.footer .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: dodgerblue;
+  font-size: 30px;
+  width: 80px;
 }
 /*# sourceMappingURL=main.css.map */
