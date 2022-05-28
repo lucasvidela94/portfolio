@@ -1,5 +1,14 @@
+.main__content {
+  display: flex;
+  flex-direction: column;
+  .title {
+    color: whitesmoke;
+    font-size: 3rem;
+    margin: 0 20px;
+  }
+}
+
 .container__content {
-  border: 3px solid greenyellow;
   display: flex;
   align-items: center;
   flex-direction: row;
@@ -9,14 +18,15 @@
   height: 900px;
 
   .card {
-    border: 3px solid palevioletred;
+    border: 3px solid whitesmoke;
     border-radius: 6px;
+    margin: 10px 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    width: 392px;
-    height: 418px;
+    width: 350px;
+    height: 380px;
     &__img {
       width: 100%;
       height: 100%;
@@ -40,11 +50,11 @@
         color: whitesmoke;
         font-size: 1.2rem;
         &__nombreProyecto {
-          color: orange;
+          color: whitesmoke;
           font-size: 1.3rem;
         }
         &__textoProyecto {
-          color: green;
+          color: whitesmoke;
           font-size: 1.2rem;
         }
         &__link {
