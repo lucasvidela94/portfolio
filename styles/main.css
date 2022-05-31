@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;600&display=swap");
 html {
   width: 100%;
   height: 100%;
@@ -5,10 +6,10 @@ html {
   padding: 0px;
   overflow-x: hidden;
   scroll-behavior: smooth;
-  font-family: sans-serif;
+  font-family: "League Spartan", sans-serif;
   width: 100%;
   background-size: 250px;
-  background-color: #333;
+  background-color: #0c090d;
   position: relative;
   -webkit-transition: all 1.4s cubic-bezier(0.52, -0.52, 0, 1.05);
   transition: all 1.4s cubic-bezier(0.52, -0.52, 0, 1.05);
@@ -152,7 +153,7 @@ table {
 .navbar {
   width: 100%;
   padding: 20px;
-  background-color: dodgerblue;
+  background-color: #53b3cb;
   -webkit-box-shadow: 0px 0px 5px 3px #494949;
           box-shadow: 0px 0px 5px 3px #494949;
 }
@@ -183,6 +184,7 @@ table {
 }
 
 .navbar__links li a {
+  color: #eaeaea;
   text-decoration: none;
 }
 
@@ -197,16 +199,11 @@ table {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   width: 100%;
-  height: 360px;
-  padding: 50px 0 0px 0px;
+  height: 100vh;
+  padding: 0px 0 0px 0px;
   line-height: 150px;
   text-align: center;
-  margin: 125px 0 125px 0;
 }
 
 .main__info--title {
@@ -223,42 +220,31 @@ table {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
-  height: 600px;
+  width: 95%;
+  height: 675px;
+  padding: 10px 20px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
-.bodyContainer .aboutMe__thumbnail {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 310px;
-  width: 310px;
-  border-radius: 160px;
-  margin: 0px 0px 0px 10px;
-}
-
-.bodyContainer .aboutMe__thumbnail .aboutMe__img {
-  width: 100%;
-  background-image: url("./assets/img/profile_picture.jpg ");
-  border-radius: 160px;
+.bodyContainer .aboutMe__img {
+  border: 1px solid white;
+  width: 30%;
+  height: 60%;
+  margin: 0 20px 0 40px;
+  border-radius: 360px;
   background-size: cover;
 }
 
 .bodyContainer .aboutMe {
   color: white;
-  width: 100%;
-  height: 425px;
-  padding: 3rem;
-  margin-right: 60px;
+  padding: 0 20px;
   border-radius: 2rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -266,26 +252,30 @@ table {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  font-size: 40px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   font-family: sans-serif;
 }
 
 .bodyContainer .aboutMe__title {
   text-decoration: none;
-  font-size: 36px;
-  margin-bottom: 1.5rem;
+  font-size: 2.25rem;
+  font-weight: 500;
+  margin-bottom: 2.8rem;
   color: white;
 }
 
 .bodyContainer .aboutMe__info {
-  font-size: 24px;
-  margin-bottom: 15px;
-  line-height: 35px;
+  font-size: 1.5rem;
+  padding: 0px 0px 0px 0px;
+  margin-bottom: 2rem;
+  line-height: 1.625;
+  font-weight: 500;
   text-align: start;
 }
 
 .bodyContainer .aboutMe__info .path {
-  color: dodgerblue;
+  color: #e01a4f;
   margin-right: 10px;
 }
 
@@ -296,8 +286,8 @@ table {
   height: 35px;
   font-size: 20px;
   padding: 6px 8px;
-  margin: 20px 0px 0px 0px;
-  color: #fff;
+  margin: 35px 0px 0px 0px;
+  color: #eaeaea;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -309,7 +299,7 @@ table {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: dodgerblue;
+  background: #e01a4f;
 }
 
 .main__content {
@@ -320,12 +310,16 @@ table {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  font-family: sans-serif;
+  padding: 6rem 20px;
 }
 
 .main__content .title {
   color: whitesmoke;
-  font-size: 3rem;
-  margin: 0 20px;
+  font-weight: 500;
+  font-size: 2.25rem;
+  margin-bottom: 2.5rem;
+  margin-left: 1.3rem;
 }
 
 .container__content {
@@ -365,8 +359,8 @@ table {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 350px;
-  height: 380px;
+  width: 420px;
+  height: 450px;
 }
 
 .container__content .card__img {
@@ -377,12 +371,13 @@ table {
 .container__content .card__img--element {
   width: 100%;
   height: 100%;
-  border: 1px solid pin k;
+  border: 1px solid pink;
 }
 
 .container__content .card__textos {
   width: 100%;
   height: 100%;
+  margin: 0.5rem 0;
 }
 
 .container__content .card__textos--titulo {
@@ -392,6 +387,7 @@ table {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 0 0.5rem;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -410,6 +406,7 @@ table {
 .container__content .card__textos--titulo__textoProyecto {
   color: whitesmoke;
   font-size: 1.2rem;
+  font-weight: 700;
 }
 
 .container__content .card__textos--titulo__link {
@@ -419,6 +416,7 @@ table {
 .footer {
   width: 100%;
   height: 100px;
+  font-family: sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -436,7 +434,7 @@ table {
 
 .footer__credits {
   margin: 0 20px;
-  color: dodgerblue;
+  color: #53b3cb;
   font-size: 1.4rem;
 }
 
@@ -463,7 +461,7 @@ table {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: dodgerblue;
+  color: #53b3cb;
   font-size: 30px;
   width: 80px;
 }
