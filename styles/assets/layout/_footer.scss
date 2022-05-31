@@ -1,13 +1,14 @@
 .footer {
   width: 100%;
   height: 100px;
+  font-family: sans-serif;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   &__credits {
     margin: 0 20px;
-    color: dodgerblue;
+    color: #53b3cb;
     font-size: 1.4rem;
   }
   &__icon {
@@ -22,7 +23,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: dodgerblue;
+    color: #53b3cb;
     font-size: 30px;
     width: 80px;
   }
