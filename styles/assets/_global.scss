@@ -1,10 +1,11 @@
 // Import base
+@import "./layout/mixins";
 @import "./base/html";
 @import "./base/reset";
 @import "./base/variables";
-@import "./base/typography";
 
 //import layout
+@import "./layout/navbar";
 @import "./layout/header";
 @import "./layout/main";
 @import "./layout/content";

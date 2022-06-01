@@ -16,7 +16,7 @@
     <title>Front end Developer</title>
   </head>
   <body>
-    <header>
+    <header class="container_navbar">
       <nav class="navbar">
         <div class="navbar__flex">
           <div class="navbar__logo">
@@ -31,192 +31,186 @@
       </nav>
     </header>
 
-    <div class="container" id="home">
-      <section class="main">
-        <div class="main__info">
-          <div class="main__info--title">
-            <h1>Lucas Videla</h1>
-          </div>
-          <div class="main__info--subtitle">
-            <h2>Front end developer</h2>
-          </div>
+    <section class="main">
+      <div class="main__info">
+        <div class="main__info--title">
+          <h1>Lucas Videla</h1>
         </div>
+        <div class="main__info--subtitle">
+          <h2>Front end developer</h2>
+        </div>
+      </div>
+    </section>
+
+    <main>
+      <section class="bodyContainer" id="aboutme">
+        <div class="aboutMe">
+          <h1 class="aboutMe__title">Acerca de mi</h1>
+          <p class="aboutMe__info">
+            <a class="path">Lucas-dev:~</a>Front end Developer autodidacta.
+          </p>
+          <p class="aboutMe__info">
+            <a class="path">Lucas-dev:~</a>Estudiante de la universidad Nacional
+            Patagonica San Juan Bosco,donde busco continuar mi formacion y
+            aprendiendo dia a dia.
+          </p>
+          <p class="aboutMe__info">
+            <a class="path">Lucas-dev:~</a>Actualmente trabajando en proyectos
+            paralelos.
+          </p>
+          <p class="aboutMe__info">
+            <a class="path">Lucas-dev:~</a>Explotando mi imaginacion en React y
+            aprendiendo paso a paso Ruby on rails.
+          </p>
+          <p class="aboutMe__info">
+            <a class="path">Lucas-dev:~</a>Apasionado por la tecnologia.
+          </p>
+          <a href="" class="boton">
+            <span class="boton__texto"> Descarga el cv! </span>
+          </a>
+        </div>
+        <img
+          src="./styles/assets/img/profile_picture.jpg"
+          class="aboutMe__img"
+          alt=""
+        />
       </section>
-
-      <main>
-        <section class="bodyContainer" id="aboutme">
-          <div class="aboutMe">
-            <h1 class="aboutMe__title">Acerca de mi</h1>
-            <p class="aboutMe__info">
-              <a class="path">Lucas-dev:~</a>Front end Developer autodidacta.
-            </p>
-            <p class="aboutMe__info">
-              <a class="path">Lucas-dev:~</a>Estudiante de la universidad
-              Nacional Patagonica San Juan Bosco,donde busco continuar mi
-              formacion y aprendiendo dia a dia.
-            </p>
-            <p class="aboutMe__info">
-              <a class="path">Lucas-dev:~</a>Actualmente trabajando en proyectos
-              paralelos.
-            </p>
-            <p class="aboutMe__info">
-              <a class="path">Lucas-dev:~</a>Explotando mi imaginacion en React
-              y aprendiendo paso a paso Ruby on rails.
-            </p>
-            <p class="aboutMe__info">
-              <a class="path">Lucas-dev:~</a>Apasionado por la tecnologia.
-            </p>
-            <a href="" class="boton">
-              <span class="boton__texto"> Descarga el cv! </span>
-            </a>
+    </main>
+    <main class="main__content" id="projects">
+      <h2 class="title">Proyectos</h2>
+      <div class="container__content">
+        <!-- Card element -->
+        <div class="card">
+          <div class="card__img">
+            <img
+              src="./styles/assets/img/Screen .jpg"
+              alt="aca va la imagen"
+              class="card__img--element"
+            />
           </div>
-          <img
-            src="./styles/assets/img/profile_picture.jpg"
-            class="aboutMe__img"
-            alt=""
-          />
-        </section>
-      </main>
-      <main class="main__content" id="projects">
-        <h2 class="title">Proyectos</h2>
-        <div class="container__content">
-          <!-- Card element -->
-          <div class="card">
-            <div class="card__img">
-              <img
-                src="./styles/assets/img/Screen .jpg"
-                alt="aca va la imagen"
-                class="card__img--element"
-              />
-            </div>
-            <div class="card__textos">
-              <h3 class="card__textos--titulo">
-                <p href="" class="card__textos--titulo__nombreProyecto">
-                  Nombre proyecto
-                </p>
-                <p class="card__textos--titulo__textoProyecto">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Repudiandae dolorem sequi nesciunt sint odit laboriosam
-                  temporibus!
-                </p>
-                <a href="" class="card__textos--titulo__link"
-                  >Mira el repositorio!</a
-                >
-              </h3>
-            </div>
+          <div class="card__textos">
+            <h3 class="card__textos--titulo">
+              <p href="" class="card__textos--titulo__nombreProyecto">
+                Nombre proyecto
+              </p>
+              <p class="card__textos--titulo__textoProyecto">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Repudiandae dolorem sequi nesciunt sint odit laboriosam
+                temporibus!
+              </p>
+              <a href="" class="card__textos--titulo__link"
+                >Mira el repositorio!</a
+              >
+            </h3>
           </div>
-          <div class="card">
-            <div class="card__img">
-              <img
-                src="./styles/assets/img/Screen .jpg"
-                alt="aca va la imagen"
-                class="card__img--element"
-              />
-            </div>
-            <div class="card__textos">
-              <h3 class="card__textos--titulo">
-                <p href="" class="card__textos--titulo__nombreProyecto">
-                  Nombre proyecto
-                </p>
-                <p class="card__textos--titulo__textoProyecto">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Repudiandae dolorem sequi nesciunt sint odit laboriosam
-                  temporibus! Fugit laudantium eum repudiandae? Rem sequi
-                  ducimus incidunt laboriosam adipisci vitae amet eligendi.
-                  Reprehenderit!
-                </p>
-                <a href="" class="card__textos--titulo__link">Ir al repo!</a>
-              </h3>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card__img">
-              <img
-                src="./styles/assets/img/Screen .jpg"
-                alt="aca va la imagen"
-                class="card__img--element"
-              />
-            </div>
-            <div class="card__textos">
-              <h3 class="card__textos--titulo">
-                <p href="" class="card__textos--titulo__nombreProyecto">
-                  Nombre proyecto
-                </p>
-                <p class="card__textos--titulo__textoProyecto">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Repudiandae dolorem sequi nesciunt sint odit laboriosam
-                  temporibus! Fugit laudantium eum repudiandae? Rem sequi
-                  ducimus incidunt laboriosam adipisci vitae amet eligendi.
-                  Reprehenderit!
-                </p>
-                <a href="" class="card__textos--titulo__link">Ir al repo!</a>
-              </h3>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card__img">
-              <img
-                src="./styles/assets/img/Screen .jpg"
-                alt="aca va la imagen"
-                class="card__img--element"
-              />
-            </div>
-            <div class="card__textos">
-              <h3 class="card__textos--titulo">
-                <p href="" class="card__textos--titulo__nombreProyecto">
-                  Nombre proyecto
-                </p>
-                <p class="card__textos--titulo__textoProyecto">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Repudiandae dolorem sequi nesciunt sint odit laboriosam
-                  temporibus! Fugit laudantium eum repudiandae? Rem sequi
-                  ducimus incidunt laboriosam adipisci vitae amet eligendi.
-                  Reprehenderit!
-                </p>
-                <a href="" class="card__textos--titulo__link">Ir al repo!</a>
-              </h3>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card__img">
-              <img
-                src="./styles/assets/img/Screen .jpg"
-                alt="aca va la imagen"
-                class="card__img--element"
-              />
-            </div>
-            <div class="card__textos">
-              <h3 class="card__textos--titulo">
-                <p href="" class="card__textos--titulo__nombreProyecto">
-                  Nombre proyecto
-                </p>
-                <p class="card__textos--titulo__textoProyecto">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Repudiandae dolorem sequi nesciunt sint odit laboriosam
-                  temporibus! Fugit laudantium eum repudiandae? Rem sequi
-                  ducimus incidunt laboriosam adipisci vitae amet eligendi.
-                  Reprehenderit!
-                </p>
-                <a href="" class="card__textos--titulo__link">Ir al repo!</a>
-              </h3>
-            </div>
-          </div>
-
-          <!-- Aca van las otras cards -->
         </div>
-      </main>
-
-      <footer>
-        <div class="footer">
-          <p class="footer__credits">Hecho por Lucas Videla♥</p>
-          <span class="footer__icon">
-            <i class="fas fa-solid fa-envelope icons"></i>
-            <i class="fa fa-brands fa-instagram icons"></i>
-            <i class="fa fa-brands fa-linkedin icons"></i>
-            <i class="fa fa-brands fa-github-square icons"></i>
-          </span>
+        <div class="card">
+          <div class="card__img">
+            <img
+              src="./styles/assets/img/Screen .jpg"
+              alt="aca va la imagen"
+              class="card__img--element"
+            />
+          </div>
+          <div class="card__textos">
+            <h3 class="card__textos--titulo">
+              <p href="" class="card__textos--titulo__nombreProyecto">
+                Nombre proyecto
+              </p>
+              <p class="card__textos--titulo__textoProyecto">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Repudiandae dolorem sequi nesciunt sint odit laboriosam
+                temporibus! Fugit laudantium eum repudiandae? Rem sequi ducimus
+                incidunt laboriosam adipisci vitae amet eligendi. Reprehenderit!
+              </p>
+              <a href="" class="card__textos--titulo__link">Ir al repo!</a>
+            </h3>
+          </div>
         </div>
-      </footer>
-    </div>
+        <div class="card">
+          <div class="card__img">
+            <img
+              src="./styles/assets/img/Screen .jpg"
+              alt="aca va la imagen"
+              class="card__img--element"
+            />
+          </div>
+          <div class="card__textos">
+            <h3 class="card__textos--titulo">
+              <p href="" class="card__textos--titulo__nombreProyecto">
+                Nombre proyecto
+              </p>
+              <p class="card__textos--titulo__textoProyecto">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Repudiandae dolorem sequi nesciunt sint odit laboriosam
+                temporibus! Fugit laudantium eum repudiandae? Rem sequi ducimus
+                incidunt laboriosam adipisci vitae amet eligendi. Reprehenderit!
+              </p>
+              <a href="" class="card__textos--titulo__link">Ir al repo!</a>
+            </h3>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__img">
+            <img
+              src="./styles/assets/img/Screen .jpg"
+              alt="aca va la imagen"
+              class="card__img--element"
+            />
+          </div>
+          <div class="card__textos">
+            <h3 class="card__textos--titulo">
+              <p href="" class="card__textos--titulo__nombreProyecto">
+                Nombre proyecto
+              </p>
+              <p class="card__textos--titulo__textoProyecto">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Repudiandae dolorem sequi nesciunt sint odit laboriosam
+                temporibus! Fugit laudantium eum repudiandae? Rem sequi ducimus
+                incidunt laboriosam adipisci vitae amet eligendi. Reprehenderit!
+              </p>
+              <a href="" class="card__textos--titulo__link">Ir al repo!</a>
+            </h3>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__img">
+            <img
+              src="./styles/assets/img/Screen .jpg"
+              alt="aca va la imagen"
+              class="card__img--element"
+            />
+          </div>
+          <div class="card__textos">
+            <h3 class="card__textos--titulo">
+              <p href="" class="card__textos--titulo__nombreProyecto">
+                Nombre proyecto
+              </p>
+              <p class="card__textos--titulo__textoProyecto">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Repudiandae dolorem sequi nesciunt sint odit laboriosam
+                temporibus! Fugit laudantium eum repudiandae? Rem sequi ducimus
+                incidunt laboriosam adipisci vitae amet eligendi. Reprehenderit!
+              </p>
+              <a href="" class="card__textos--titulo__link">Ir al repo!</a>
+            </h3>
+          </div>
+        </div>
+
+        <!-- Aca van las otras cards -->
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer">
+        <p class="footer__credits">Hecho por Lucas Videla♥</p>
+        <span class="footer__icon">
+          <i class="fas fa-solid fa-envelope icons"></i>
+          <i class="fa fa-brands fa-instagram icons"></i>
+          <i class="fa fa-brands fa-linkedin icons"></i>
+          <i class="fa fa-brands fa-github-square icons"></i>
+        </span>
+      </div>
+    </footer>
   </body>
 </html>

@@ -1,7 +1,7 @@
 .main__content {
   display: flex;
   flex-direction: column;
-  font-family: sans-serif;
+  font-family: $first-font;
   padding: 6rem 20px;
   .title {
     color: whitesmoke;
@@ -19,7 +19,7 @@
   flex-wrap: wrap;
   justify-content: center;
   width: 100%;
-  height: 900px;
+  height: 1000px;
 
   .card {
     border: 3px solid whitesmoke;
@@ -29,8 +29,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    width: 420px;
-    height: 450px;
+    width: 380px;
+    height: 420px;
     &__img {
       width: 100%;
       height: 100%;
@@ -46,7 +46,6 @@
       height: 100%;
       margin: 0.5rem 0;
       &--titulo {
-        font-family: sans-serif;
         width: 100%;
         height: 100%;
         display: flex;
